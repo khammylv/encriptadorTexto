@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="head">
+            <h1></i>Encriptador de texto</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="anuncio">
+            <span class="icono "><i class='bx bxs-bell'></i></span>
+            <p>Solo letras minúsculas, sin acento</p>
+        </section>
+        <section class="espacio">
+            <div class="contenedor derecho">
+                <h2>Escribe tu mensaje aquí:</h2>
+                <div class="carta">
+
+                    <textarea name="" class="cajaTxt" id="texto" required placeholder="Escriba un mensaje:" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <button class="botones" id = "encriptar" onclick="botondesEncriptar()"  >Encriptar</button>
+                <button class="botones" id = "desencriptar" onclick = "botonEncriptar()" >Desencriptar</button>
+            </div>
+            <div class="contenedor izquierdo">
+                <h2>Mensaje secreto:</h2>
+                <div class="carta">
+                    <textarea name="" class="cajaTxt" type="text" id="msg" cols="30" rows="10"></textarea>
+                    
+                </div>
+                <button class="botones btncopy" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+        <section class="anuncio2 " id="alerta">
+            <span class="icono2"><i class='bx bxs-error'></i></span>
+            <p>INGRESA VALORES VÁLIDOS</p>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contfooter footer-content">
+
+            <div class="contact-us">
+                <h2 class="brand">Camila Leal</h2>
+                <p>Maria Camila Leal Vaquez</p>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/khammylv" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/maria-camila-leal-vasquez-614365204/" target="_blank"
+                    class="social-media-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="mailto:khammylv@gmail.com" class="social-media-icon">
+                    <i class='bx bx-mail-send'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src='js/app.js'></script>
+</body>
+
+</html>
